@@ -797,7 +797,7 @@ p{
   width:94%;
   margin-left:3%
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 200px) {
   footer{
     display:block;
   }
@@ -811,7 +811,7 @@ p{
     display:none;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 200px) {
   footer{
     display:none;
   }
