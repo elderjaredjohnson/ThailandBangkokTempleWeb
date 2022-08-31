@@ -72,53 +72,133 @@
         <p> To use this website properly, please use a wider screen</p>
       </div>
 
-    <footer>
-      <div class="wide-screen">
-        <div class="footer-seperator" >
-          <div class="footer-1"> <!--Newsletter/Subscribe/Social-->
-            <div style="display:none;">
+      <footer>
+        <div class="wide-screen">
+          <div class="footer-seperator" >
+            <div class="footer-1"> <!--Newsletter/Subscribe/Social-->
+              <div style="display:none;">
+                <p>
+                  Subscribe to the Newsletter
+                </p>
+
+                <form action="/action_page.php" style="width:100%;" class="subscribe-btn">
+                  <input type="email" id="email2" name="email" placeholder="What is your best email?">
+                  <hr>
+                  <input type="submit" class="submit-btn" value="Subscribe">
+                </form>
+              </div>
+
+              <div class="social-div">
+                <div class="social-box">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <div class="social-box">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div class="social-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="social-box">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+
+              <p class="not-official">
+                This website is not an official site of The Church of Jesus Christ of Latter-day Saints.
+              </p>
+            </div>
+
+            <div class="footer-2"> <!-- Home-->
               <p>
-                Subscribe to the Newsletter
+                <a href="index.html" class="footer-header">Home</a>
               </p>
 
-              <form action="/action_page.php" style="width:100%;" class="subscribe-btn">
-                <input type="email" id="email2" name="email" placeholder="What is your best email?">
-                <hr>
-                <input type="submit" class="submit-btn" value="Subscribe">
-              </form>
+              <hr>
+
+              <a class="footer-link" href="open-house.html">
+                Open House Details
+              </a>
+
+              <hr>
+
+              <a class="footer-link" href="https://newsroom.churchofjesuschrist.org/article/new-temples-announced-abidjan-ivory-coast--cote-divoire-port-au-prince-haiti-bangkok-thailand" target="_blank">
+                Temple Announcement
+              </a>
             </div>
 
-            <div class="social-div">
-              <div class="social-box">
-                <i class="fa-brands fa-facebook-f"></i>
-              </div>
+            <div class="footer-3"> <!-- About -->
+              <p>
+                <a href="about.html" class="footer-header">About</a>
+              </p>
 
-              <div class="social-box">
-                <i class="fa-brands fa-instagram"></i>
-              </div>
+              <hr>
 
-              <div class="social-box">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
+              <a href="about.html" class="footer-link">
+                What is a Temple?
+              </a>
 
-              <div class="social-box">
-                <i class="fa-brands fa-youtube"></i>
-              </div>
+              <hr>
+
+              <a href="about.html#Christian_Beliefs" class="footer-link">
+                Christian Beliefs
+              </a>
+
+              <hr>
+
+              <a href="about.html#History_Of-Thailand_Bangkok_Temple" class="footer-link">
+                History of the Thailand Bangkok Temple
+              </a>
+
             </div>
 
-            <p class="not-official">
-              This website is not an official site of The Church of Jesus Christ of Latter-day Saints.
-            </p>
+            <div class="footer-4"> <!-- Media -->
+              <p>
+                <a href="media-coverage.html" class="footer-header">Media</a>
+              </p>
+
+              <hr>
+
+              <a href="press-releases.html" class="footer-link">
+                Press Releases
+              </a>
+
+              <hr>
+
+              <a href="media-coverage.html" class="footer-link">
+                Media Coverage
+              </a>
+
+              <hr>
+
+              <a href="contact-us.html" class="footer-link">
+                Inquiries
+              </a>
+            </div>
           </div>
 
-          <div class="footer-2"> <!-- Home-->
+          <div class="footer-5"> <!-- legal stuff -->
+            <p style="float:left;">
+              © All rights reserved.
+            </p>
+
+            <p style="float:right;">
+              thailandbangkoktemple.com
+            </P>
+          </div>
+        </div>
+
+        <div class="narrow-screen">
+          <div class="narrow-center">
             <p>
               <a href="index.html" class="footer-header">Home</a>
             </p>
 
             <hr>
 
-            <a class="footer-link" href="open-house">
+            <a class="footer-link" href="open-house.html">
               Open House Details
             </a>
 
@@ -127,9 +207,7 @@
             <a class="footer-link" href="https://newsroom.churchofjesuschrist.org/article/new-temples-announced-abidjan-ivory-coast--cote-divoire-port-au-prince-haiti-bangkok-thailand" target="_blank">
               Temple Announcement
             </a>
-          </div>
 
-          <div class="footer-3"> <!-- About -->
             <p>
               <a href="about.html" class="footer-header">About</a>
             </p>
@@ -152,9 +230,6 @@
               History of the Thailand Bangkok Temple
             </a>
 
-          </div>
-
-          <div class="footer-4"> <!-- Media -->
             <p>
               <a href="media-coverage.html" class="footer-header">Media</a>
             </p>
@@ -176,127 +251,52 @@
             <a href="contact-us.html" class="footer-link">
               Inquiries
             </a>
+
+            <div>
+              <p>
+                Subscribe to the Newsletter
+              </p>
+
+              <form action="/action_page.php" style="width:100%;" class="subscribe-btn" data-netlify="true" name="subscribe-footer">
+                <input type="email" id="email2" name="email" placeholder="What is your best email?">
+                <hr>
+                <input type="submit" class="submit-btn" value="Subscribe">
+              </form>
+            </div>
+
+            <div class="social-div" style="margin-top:15px;">
+              <div class="social-box">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+
+              <div class="social-box">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+
+              <div class="social-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div class="social-box">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+
+            <p class="not-official">
+              This website is not an official site of The Church of Jesus Christ of Latter-day Saints.
+            </p>
           </div>
-        </div>
 
-        <div class="footer-5"> <!-- legal stuff -->
-          <p style="float:left;">
-            © All rights reserved.
-          </p>
-
-          <p style="float:right;">
-            thailandbangkoktemple.com
-          </P>
-        </div>
-      </div>
-
-      <div class="narrow-screen">
-        <div class="narrow-center">
-          <p>
-            <a href="index.html" class="footer-header">Home</a>
-          </p>
-
-          <hr>
-
-          <a class="footer-link" href="open-house">
-            Open House Details
-          </a>
-
-          <hr>
-
-          <a class="footer-link" href="https://newsroom.churchofjesuschrist.org/article/new-temples-announced-abidjan-ivory-coast--cote-divoire-port-au-prince-haiti-bangkok-thailand" target="_blank">
-            Temple Announcement
-          </a>
-
-          <p>
-            <a href="about.html" class="footer-header">About</a>
-          </p>
-
-          <hr>
-
-          <a href="about.html" class="footer-link">
-            What is a Temple?
-          </a>
-
-          <hr>
-
-          <a href="about.html#Christian_Beliefs" class="footer-link">
-            Christian Beliefs
-          </a>
-
-          <hr>
-
-          <a href="about.html#History_Of-Thailand_Bangkok_Temple" class="footer-link">
-            History of the Thailand Bangkok Temple
-          </a>
-
-          <p>
-            <a href="media-coverage.html" class="footer-header">Media</a>
-          </p>
-
-          <hr>
-
-          <a href="press-releases.html" class="footer-link">
-            Press Releases
-          </a>
-
-          <hr>
-
-          <a href="media-coverage.html" class="footer-link">
-            Media Coverage
-          </a>
-
-          <hr>
-
-          <a href="contact-us.html" class="footer-link">
-            Inquiries
-          </a>
-
-          <div style="display:none;">
-            <p>
-              Subscribe to the Newsletter
+          <div class="footer-5">
+            <p style="float: left; padding-left: 15px; padding-right: 0px; font-size: 12px;">
+              © All rights reserved.
             </p>
 
-            <form action="/action_page.php" style="width:100%;" class="subscribe-btn">
-              <input type="email" id="email2" name="email" placeholder="What is your best email?">
-              <hr>
-              <input type="submit" class="submit-btn" value="Subscribe">
-            </form>
+            <p style="float: right; padding-right: 15px; padding-left: 0px; font-size: 10px; padding-top: 17px;">
+              thailandbangkoktemple.com
+            </P>
           </div>
-
-          <div class="social-div" style="margin-top:15px;">
-            <div class="social-box">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-
-            <div class="social-box">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-
-            <div class="social-box">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-
-            <div class="social-box">
-              <i class="fa-brands fa-youtube"></i>
-            </div>
-          </div>
-
-          <p class="not-official">
-            This website is not an official site of The Church of Jesus Christ of Latter-day Saints.
-          </p>
         </div>
-
-        <div class="footer-5">
-          <p style="float: left; padding-left: 15px; padding-right: 0px; font-size: 12px;">
-            © All rights reserved.
-          </p>
-
-          <p style="float: right; padding-right: 15px; padding-left: 0px; font-size: 10px; padding-top: 17px;">
-            thailandbangkoktemple.com
-          </P>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
