@@ -1,0 +1,31 @@
+Things to Do
+<--  PROBLEMS/TASKS IN PROGRESS -->
+Start work on Gallery pages
+  - upload photos
+  - finish code for displaying photos so no manual html writing is needed
+
+<-- PROBLEMS/TASKS FOR LATER-->
+Fix the form to not submit unless there is a legitimate email in the box.
+FAQ page should be fairly quick and easy to do
+  - come up with list of questions
+  - Code it
+Contact us page
+come and see page
+Media Coverage page
+  - pull info on media from csv or google sheets
+  - display in page without need for manual coding for each new link
+  - display newest to oldest
+
+<-- MAYBE GET TO ONE DAY -->
+Photo submission form
+Media Coverage page
+  - section for highlighted news articles regarding temple for easy access?
+
+<-- DONE UNTIL FURTHER CHANGES NEEDED -->
+About page
+Index page
+  - update with open house announcement, date, etc when available
+Media kit
+  - update once there is a media kit
+Resources page
+  - Update once we have actual resources for printing and personal use.
