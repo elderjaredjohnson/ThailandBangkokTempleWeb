@@ -15,6 +15,8 @@ Media Coverage page
   - pull info on media from csv or google sheets
   - display in page without need for manual coding for each new link
   - display newest to oldest
+Gallery pages
+  - Find way to include csv sheet with 3 columns, 1 contains each image file name as the current code will recognize, 2 contains given title for said image, 3 contains a description or blurb for said image
 
 <-- MAYBE GET TO ONE DAY -->
 Photo submission form
