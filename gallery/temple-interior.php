@@ -3,17 +3,18 @@
   <head>
     <title>Thailand Bangkok Temple</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
     <script src="https://kit.fontawesome.com/4e5974cd8a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/gallery.css?v=<?php echo time(); ?>">
   </head>
 
   <body>
     <header>
       <div style="float:left;"> <!-- Logo and Name -->
         <a href="index.html">
-          <img src="images/TBTLogo_ENG.png" alt="Thailand Bangkok Temple Open House" width="auto" height="98vh" style="margin-top:1vh; margin-left:20px;"/>
+          <img src="../images/TBTLogo_ENG.png" alt="Thailand Bangkok Temple Open House" width="auto" height="98vh" style="margin-top:1vh; margin-left:20px;"/>
         </a>
       </div>
 
@@ -55,16 +56,27 @@
 
     <div class="body-content">
         <p style="margin-top:17px;" class="section-header">
-          Under construction
+          Temple Interior Photos
         </p>
 
         <div class="divider-div"><div></div></div>
 
-        <p class="text-width">
-          For now, this page is unavailable. Just like the Thailand Bangkok Temple is under construction, so is this website! Check back often as we continually update with more features and content.
-        </p>
-
-        <div style="height:115px;"></div>
+        <div class="container">
+          <!-- heading text -->
+          <ul class="image-gallery">
+            <?php
+              // Enter your Directry/Folder Name I have Given Folder Name As Images
+              $files = scandir('interior/');
+              foreach ($files as $file) {
+                if ($file !== "." && $file !== "..") {
+                  // Give Image source -- src='folder-name/$file'
+                  echo "<li><img src='interior/$file' alt=''/><div class='overlay'><span>$file</span></div></li>";
+                }
+              }
+            ?>
+            <!-- other items here -->
+          </ul>
+        </div>
 
       </div>
 

@@ -1,31 +1,26 @@
 /* ======================================
 Responsive Image gallery Style rules
 ======================================*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .container {
   padding: 40px 5%;
+  box-sizing: border-box;
 }
 
 .heading-text {
   margin-bottom: 2rem;
   font-size: 2rem;
+  box-sizing: border-box;
 }
 
 .heading-text span {
   font-weight: 100;
+  box-sizing: border-box;
 }
 
 ul {
   list-style: none;
+  padding:0;
 }
 
 /* Responsive image gallery rules begin*/
@@ -34,6 +29,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  box-sizing: border-box;
 }
 
 .image-gallery > li {
@@ -42,12 +38,14 @@ ul {
   cursor: pointer;
   position: relative;
   max-height:400px;
-  max-width:400px
+  max-width:400px;
+  box-sizing: border-box;
 }
 
 .image-gallery::after {
   content: "";
   flex-grow: 999;
+  box-sizing: border-box;
 }
 
 .image-gallery li img {
@@ -56,6 +54,7 @@ ul {
   height: 100%;
   vertical-align: middle;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -73,9 +72,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 /* hover */
 .image-gallery li:hover .overlay {
   transform: scale(1);
+  box-sizing: border-box;
 }
