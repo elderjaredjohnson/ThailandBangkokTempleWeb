@@ -3,8 +3,10 @@ Responsive Image gallery Style rules
 ======================================*/
 
 .container {
-  padding: 40px 5%;
+  padding: 25px;
   box-sizing: border-box;
+  width:96%;
+  margin-left:2%;
 }
 
 .heading-text {
@@ -37,9 +39,11 @@ ul {
   height: auto;
   cursor: pointer;
   position: relative;
-  max-height:400px;
-  max-width:400px;
+  max-height:450px;
+  max-width:450px;
   box-sizing: border-box;
+  min-width:300px;
+  width:24%;
 }
 
 .image-gallery::after {
@@ -79,4 +83,36 @@ ul {
 .image-gallery li:hover .overlay {
   transform: scale(1);
   box-sizing: border-box;
+}
+@media screen and (min-width: 1300px) {
+  .image-gallery > li {
+    width:24%;
+    max-height:450px;
+    max-width:450px;
+    min-width:300px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .image-gallery > li {
+    width:32%;
+    max-height:450px;
+    max-width:450px;
+    min-width:300px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .image-gallery > li {
+    width:49%;
+    max-height:450px;
+    max-width:450px;
+    min-width:300px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .image-gallery > li {
+    width:99%;
+    max-width:unset;
+    max-height: unset;
+    min-width:unset;
+  }
 }

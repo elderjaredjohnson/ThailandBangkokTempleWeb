@@ -738,6 +738,16 @@ p{
 .news-link{
   text-decoration: none;
 }
+@media screen and (max-width: 400px) {
+  header{
+    height: :12vh;
+  }
+}
+@media screen and (min-width: 400px) {
+  header{
+    height:16vh;
+  }
+}
 @media screen and (min-width: 1150px) {
   .recentNews .row {
     margin-left:calc(((100% - 1080px) / 2));

@@ -17,6 +17,7 @@ Media Coverage page
   - display newest to oldest
 Gallery pages
   - Find way to include csv sheet with 3 columns, 1 contains each image file name as the current code will recognize, 2 contains given title for said image, 3 contains a description or blurb for said image
+Fix header for under 400px to shrink height, image, and dropdown some.
 
 <-- MAYBE GET TO ONE DAY -->
 Photo submission form
