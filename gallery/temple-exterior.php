@@ -19,37 +19,37 @@
       </div>
 
       <div class="nav-bar">
-        <a href="visit.html" class="visitbtn">Visit</a>
-        <a href="come-and-see.html">Come and See</a>
-        <a href="resources.html">Resources</a>
+        <a href="../visit.html" class="visitbtn">Visit</a>
+        <a href="../come-and-see.html">Come and See</a>
+        <a href="../resources.html">Resources</a>
         <div class="navdropdown">
           <a class="navdropbtn">Media <i class="fa-solid fa-angle-down"></i></a>
           <div class="navdropdown-content" id="navdropdown-content">
-            <a href="media-kit.html">Media Kit</a>
-            <a href="press-releases.html">Press Releases</a>
-            <a href="media-coverage.html">Media Coverage</a>
+            <a href="../media-kit.html">Media Kit</a>
+            <a href="../press-releases.html">Press Releases</a>
+            <a href="../media-coverage.html">Media Coverage</a>
           </div>
         </div>
-        <a href="faq.html">FAQ</a>
-        <a href="gallery.html">Galleries</a>
-        <a href="about.html">About</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../gallery.html">Galleries</a>
+        <a href="../about.html">About</a>
       </div>
 
       <div class="dropdown" style="float:right;"> <!-- Dropdown Bar -->
         <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
         <div class="dropdown-content" id="dropdown-content">
-          <a href="about.html">About</a>
-          <a href="gallery.html">Galleries</a>
-          <a href="faq.html">FAQ</a>
+          <a href="../about.html">About</a>
+          <a href="../gallery.html">Galleries</a>
+          <a href="../faq.html">FAQ</a>
           <a id="Media">Media <i class="fa-solid fa-angle-down"></i></a>
           <div id="media-options">
-            <a href="media-kit.html">Media Kit</a>
-            <a href="press-releases.html">Press Releases</a>
-            <a href="media-coverage.html">Media Coverage</a>
+            <a href="../media-kit.html">Media Kit</a>
+            <a href="../press-releases.html">Press Releases</a>
+            <a href="../media-coverage.html">Media Coverage</a>
           </div>
-          <a href="resources.html">Resources</a>
-          <a href="come-and-see.html">Come and See</a>
-          <a href="visit.html">Visit</a>
+          <a href="../resources.html">Resources</a>
+          <a href="../come-and-see.html">Come and See</a>
+          <a href="../visit.html">Visit</a>
         </div>
       </div>
     </header>

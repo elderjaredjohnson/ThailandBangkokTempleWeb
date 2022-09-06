@@ -738,6 +738,13 @@ p{
 .news-link{
   text-decoration: none;
 }
+.gallery-cover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:400px;
+  width:600px;
+  background-image: image("../images/bangkok-thailand-temple-41.jpg");
+}
 @media screen and (max-width: 400px) {
   header{
     height: :12vh;
