@@ -1,5 +1,77 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src:url("../fonts/english/Montserrat-Regular.ttf") format("truetype");
+}
+/* playfair-display-regular - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/english/playfair-display-v30-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/english/playfair-display-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/english/playfair-display-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/english/playfair-display-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/english/playfair-display-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/english/playfair-display-v30-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+@font-face{
+  font-family: "RobotoSlab-Regular";
+  src:url("../fonts/english/RobotoSlab-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Inconsolata-Regular";
+  src:url("../fonts/english/Inconsolata-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "EBGaramond-Regular";
+  src:url("../fonts/english/EBGaramond-Regular.ttf") format("truetype");
+}
 *{
   margin:0;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body{
+  position: absolute;
+  width:100%;
+  height:100%;
+  display:block;
+}
+header{
+  width:100%;
+  height:16vh;
+  position:relative;
+  background-color: rgb(28, 54, 100, 1);
+}
+#email{
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  margin-top:15px;
+  font-size:20px;
+  font-family: "Montserrat-Regular";
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 415px;
+}
+#email input{
+  font-size:20px;
+  font-family: "Montserrat-Regular";
+}
+#email2{
+  width: 77%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .cover{
   width:100%;
@@ -7,12 +79,6 @@
   background-image:url("../images/bangkok-thailand-temple-26696.jpg");
   background-position: center;
   background-size: cover;
-}
-header{
-  width:100%;
-  height:16vh;
-  position:relative;
-  background-color: rgb(28, 54, 100, 1);
 }
 .navdropdown{
   width:auto;
@@ -35,10 +101,6 @@ header{
   margin-top: 35px;
   text-decoration: none;
 }
-/* Dropdown Button */
-.navdropbtn {
-
-}
 /* Dropdown Content (Hidden by Default) */
 .navdropdown-content {
   display: none;
@@ -51,7 +113,6 @@ header{
   margin-left: 285px;
   margin-top: 65px;
 }
-
 /* Links inside the dropdown */
 .navdropdown-content a {
   color: white;
@@ -78,7 +139,6 @@ header{
   margin-left: 20%;
   padding-top: 15px;
   padding-bottom: 15px;
-}
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .navdropdown:hover .navdropbtn {
@@ -211,85 +271,61 @@ header{
   margin: 0 auto;
   text-align: center;
 }
-@media screen and (min-width: 1040px) {
-  .dropdown {
-    display:none;
-  }
-  .nav-bar{
-    display: inline;
-  }
-  .wide-screen{
-    display:relative;
-  }
-  .narrow-screen{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  .nav-bar{
-    display:none;
-  }
-
   /* Dropdown Button */
-  .dropbtn {
-    float: right;
-    background-color: transparent;
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    border: none;
-    margin-right: 2vh;
-    margin-top: 2vh;
-  }
-
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: table;
-    height: 100%;
-    width: 160px;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1C3664;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-    z-index: 1;
-    margin-top: 90px;
-    margin-left: -2vh;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: RGB(255, 208, 132, .3);
-    color:#ffd084;
-  }
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: rgba(0,0,0,0.2);}
-
-  .wide-screen{
-    display:none;
-  }
-  .narrow-screen{
-    display: relative;
-  }
+.dropbtn {
+  float: right;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+  border: none;
+  margin-right: 2vh;
+  margin-top: 2vh;
 }
-
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 160px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1C3664;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  margin-top: 90px;
+  margin-left: -2vh;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: RGB(255, 208, 132, .3);
+  color:#ffd084;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgba(0,0,0,0.2);
+}
+.wide-screen{
+  display:none;
+}
+.narrow-screen{
+  display: relative;
+}
 /* Cover Photo items*/
 .cover-light{
   width: 100%;
@@ -305,16 +341,6 @@ header{
   height: 150px;
   padding-top: 200px;
   padding-left: 50px;
-}
-html {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-body{
-  position: absolute;
-  width:100%;
-  height:100%;
-  display:block;
 }
 .cover-image{
   height: inherit;
@@ -338,37 +364,6 @@ body{
   position: relative;
   padding-top:30px;
   padding-bottom: 30px;
-}
-@font-face {
-  font-family: "Montserrat-Regular";
-  src:url("../fonts/english/Montserrat-Regular.ttf") format("truetype");
-}
-/* playfair-display-regular - latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/english/playfair-display-v30-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/english/playfair-display-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/english/playfair-display-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/english/playfair-display-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/english/playfair-display-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/english/playfair-display-v30-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
-}
-@font-face{
-  font-family: "RobotoSlab-Regular";
-  src:url("../fonts/english/RobotoSlab-Regular.ttf") format("truetype");
-}
-
-@font-face{
-  font-family: "Inconsolata-Regular";
-  src:url("../fonts/english/Inconsolata-Regular.ttf") format("truetype");
-}
-
-@font-face{
-  font-family: "EBGaramond-Regular";
-  src:url("../fonts/english/EBGaramond-Regular.ttf") format("truetype");
 }
 .church-name{
   font-family: "Montserrat-Regular";
@@ -429,33 +424,6 @@ p{
 }
 .subscribe-p{
   padding-top:25px;
-}
-#email{
-  width: 35%;
-  justify-content: center;
-  align-items: center;
-  margin-top:15px;
-  font-size:20px;
-  font-family: "Montserrat-Regular";
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 415px;
-}
-#email input{
-  font-size:20px;
-  font-family: "Montserrat-Regular";
-}
-#email2{
-  width: 77%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 .submit-btn{
   background-color:#1C3664;
@@ -550,6 +518,31 @@ p{
 .section2 p{
   text-align:center;
 }
+.gallery-cover{
+  text-decoration:none;
+  color:white;
+}
+.gallery-cover:active{
+  color:white;
+  text-decoration: none;
+}
+.gallery-cover-title{
+   style="font-family:'Playfair Display';
+   color: white;
+   text-shadow: 0 0 20px black;
+   font-size:50px;
+   padding-top:150px;
+   text-align:left; padding-left:25px;"
+}
+.gallery-cover-desc{
+  font-family:'Montserrat-Regular';
+  color: white;
+  padding-top:10px;
+  padding-bottom:25px;
+  text-shadow: 0 0 20px black;
+  text-align:left;
+  padding-left:25px;
+}
 .not-official{
   width: 80%;
   margin-left: 10%;
@@ -578,34 +571,12 @@ p{
   max-height: 630px;
   aspect-ratio: 16/9;
 }
-@media screen and (min-width: 1400px) {
-  .video-frame{
-    margin-left:calc(((100% - 1120px) / 2));
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .video-frame{
-    margin-left:10%;
-  }
-}
 .map-frame{
   margin-left: 20%;
   padding-bottom: 15px;
   max-width: 900px;
   max-height: 675px;
   aspect-ratio: 4/3;
-}
-@media screen and (min-width: 1400px) {
-  .map-frame{
-    margin-left:calc(((100% - 900px) / 2));
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .map-frame{
-    margin-left:20%;
-  }
 }
 .learn-more{
   color:#1c3664;
@@ -723,13 +694,13 @@ p{
     padding-bottom: 30px;
     text-align: center;
 }
-.btn-news.btn-contests a {
+.btn-news .btn-contests a {
     color: #fff;
     font-family: 'nimbus-sans-condensed', sans-serif;
     font-size: 24px;
     transition: all 0.2s ease-in-out 0s;
 }
-.btn-news.btn-contests a:hover {
+.btn-news .btn-contests a:hover {
     color: #000;
 }
 .news-link:hover{
@@ -738,12 +709,23 @@ p{
 .news-link{
   text-decoration: none;
 }
-.gallery-cover{
-  background-size: cover;
-  background-repeat: no-repeat;
-  height:400px;
-  width:600px;
-  background-image: image("../images/bangkok-thailand-temple-41.jpg");
+.footer-1 div p{
+    font-size:16px;
+}
+.footer-1 div form .submit-btn{
+  font-size: 15px;
+  margin-bottom:15px;
+}
+.small-screen{
+  display:none;
+  margin-top:50px;
+  width:94%;
+  margin-left:3%
+}
+.mediac-img{
+  height:100px;
+  width:100px;
+  object-fit:cover;
 }
 @media screen and (max-width: 400px) {
   header{
@@ -809,12 +791,6 @@ p{
       min-width: 345px;
   }
 }
-.small-screen{
-  display:none;
-  margin-top:50px;
-  width:94%;
-  margin-left:3%
-}
 @media screen and (min-width: 300px) {
   footer{
     display:block;
@@ -848,10 +824,42 @@ p{
         font-size:16px;
     }
 }
-.footer-1 div p{
-    font-size:16px;
+@media screen and (min-width: 1040px) {
+  .dropdown {
+    display:none;
+  }
+  .nav-bar{
+    display: inline;
+  }
+  .wide-screen{
+    display:relative;
+  }
+  .narrow-screen{
+    display: none;
+  }
 }
-.footer-1 div form .submit-btn{
-  font-size: 15px;
-  margin-bottom:15px;
+@media screen and (max-width: 1040px) {
+  .nav-bar{
+    display:none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .map-frame{
+    margin-left:calc(((100% - 900px) / 2));
+  }
+}
+@media screen and (max-width: 1400px) {
+  .map-frame{
+    margin-left:20%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .video-frame{
+    margin-left:calc(((100% - 1120px) / 2));
+  }
+}
+@media screen and (max-width: 1400px) {
+  .video-frame{
+    margin-left:10%;
+  }
 }

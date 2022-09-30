@@ -26,7 +26,7 @@
           <div class="navdropdown-content" id="navdropdown-content">
             <a href="media-kit.html">Media Kit</a>
             <a href="press-releases.html">Press Releases</a>
-            <a href="media-coverage.html">Media Coverage</a>
+            <a href="media-coverage.php">Media Coverage</a>
           </div>
         </div>
         <a href="faq.html">FAQ</a>
@@ -54,18 +54,30 @@
     </header>
 
     <div class="body-content">
-        <p style="margin-top:17px;" class="section-header">
-          Under construction
-        </p>
+      <ul>
+        <?php
+          if (($open = fopen("database/media-coverage.csv", "r")) !== FALSE)
+          {
 
-        <div class="divider-div"><div></div></div>
+            while (($data = fgetcsv($open, 1000, ",")) !== FALSE)
+            {
+              $array[] = $data;
+            }
 
-        <p class="text-width">
-          For now, this page is unavailable. Just like the Thailand Bangkok Temple is under construction, so is this website! Check back often as we continually update with more features and content.
-        </p>
+            fclose($open);
 
-        <div style="height:115px;"></div>
-
+            for ($k = 1 ; $k < 14; $k++){
+              echo "<li>";
+              $img = $array[$k][3];
+              echo "<img src='$img' class='mediac-img'/>";
+              echo $array[$k][0];
+              echo $array[$k][1];
+              echo $array[$k][2];
+              echo "</li>";
+            }
+          }
+        ?>
+        </ul>
       </div>
 
       <div class="small-screen">
