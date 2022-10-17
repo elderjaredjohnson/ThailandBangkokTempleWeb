@@ -324,7 +324,7 @@ header{
   display:none;
 }
 .narrow-screen{
-  display: relative;
+  display: block;
 }
 /* Cover Photo items*/
 .cover-light{
@@ -722,11 +722,6 @@ p{
   width:94%;
   margin-left:3%
 }
-.mediac-img{
-  height:100px;
-  width:100px;
-  object-fit:cover;
-}
 @media screen and (max-width: 400px) {
   header{
     height: :12vh;
@@ -832,7 +827,7 @@ p{
     display: inline;
   }
   .wide-screen{
-    display:relative;
+    display:block;
   }
   .narrow-screen{
     display: none;
